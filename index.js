@@ -1,7 +1,5 @@
 export const queueTime = (q, tillNum) => {
-    if (tillNum === 1) {
-        return q.reduce((a, b) => a + b)
-    }
+    if (tillNum === 1)   return q.reduce((a, b) => a + b)
     const tills = [];
     for (let i = 0; i < tillNum; i++) {
         tills.push([])
